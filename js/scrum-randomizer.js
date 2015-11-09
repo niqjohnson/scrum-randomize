@@ -13,14 +13,15 @@ function getNextName() {
   var n = today.getDate() + today.getMonth() + today.getFullYear(),
       i = n % ( team.length ),
       name = team[i];
-  console.log( team, n, i, team.length, name );
-  $( 'body' ).append( '<p>' + name + '</p>' );
+  $( '#team-order' ).append( '<li>' + name + '</li>' );
   team.splice( i, 1 );
 };
 
 $( document ).ready( function() {
-  var l = team.length;
+  var l = team.length,
+      dateText = ( today.getMonth() + 1 ) + '/' + today.getDate() + '/' + today.getFullYear();
   for ( var x = 0; x < l; x++ ) {
     getNextName();
   }
+  $( '#date-today').text( dateText );
 });
