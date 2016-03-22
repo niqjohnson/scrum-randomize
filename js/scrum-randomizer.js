@@ -1,5 +1,4 @@
 var team = [
-      'Adam',
       'Bill',
       'Candice',
       'Chuck',
