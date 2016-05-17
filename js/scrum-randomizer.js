@@ -1,15 +1,21 @@
-var team = [
+var teams = {
+    'FPO - Dynamic Disclosures': [
       'Amy',
       'Bill',
-      'Candice',
       'Chuck',
       'Marteki',
       'Natalie',
-      'Nicholas'
     ],
+    'FPO - Mosaic(?)': [
+      'Ans',
+      'Candice',
+      'Natalie',
+      'Nicholas'
+    ]
+}
     today = new Date();
 
-function getNextName() {
+function getNextName( team ) {
   var n = today.getDate() + today.getMonth() + today.getFullYear(),
       i = n % ( team.length ),
       name = team[i];
@@ -17,11 +23,31 @@ function getNextName() {
   team.splice( i, 1 );
 };
 
-$( document ).ready( function() {
-  var l = team.length,
-      dateText = ( today.getMonth() + 1 ) + '/' + today.getDate() + '/' + today.getFullYear();
+function orderTeam( team ) {
+  var n = today.getDate() + today.getMonth() + today.getFullYear(),
+      l = team.length,
+      content = '';
+
   for ( var x = 0; x < l; x++ ) {
-    getNextName();
+    var i = n % ( team.length ),
+        name = team[i];
+
+    content += '<li>' + name + '</li>';
+    team.splice( i, 1 );
   }
+  return content;
+}
+
+$( document ).ready( function() {
+  var dateText = ( today.getMonth() + 1 ) + '/' + today.getDate() + '/' + today.getFullYear();
   $( '#date-today').text( dateText );
+
+  for ( var key in teams ) {
+    var name = key,
+        team = teams[key];
+        content = orderTeam( team );
+    $( 'body' ).append( '<h2>' + name + '</h2>');
+    $( 'body' ).append( '<ol>' + content + '</ol>');
+  }
+
 });
