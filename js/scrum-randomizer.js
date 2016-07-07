@@ -1,4 +1,15 @@
 var teams = {
+    'Data & Research': [
+      'A.J.',
+      'Cat',
+      'Chuck',
+      'Hillary',
+      'Jessica',
+      'Jimmy',
+      'Kim',
+      'Kurt',
+      'Natalia'
+    ],
     'FPO - Dynamic Disclosures': [
       'Amy',
       'Bill',
