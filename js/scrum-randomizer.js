@@ -8,7 +8,9 @@ var teams = {
       'Jimmy',
       'Kim',
       'Kurt',
-      'Natalia'
+      'Natalia',
+      'Christie',
+      'Cheryl'
     ],
     'FPO - Dynamic Disclosures': [
       'Amy',
