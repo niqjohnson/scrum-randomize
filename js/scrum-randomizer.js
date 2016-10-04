@@ -1,30 +1,11 @@
 var teams = {
-    'Data & Research': [
-      'A.J.',
-      'Cat',
-      'Chuck',
-      'Hillary',
-      'Jessica',
-      'Jimmy',
-      'Kim',
-      'Kurt',
-      'Natalia',
-      'Christie',
-      'Cheryl',
-      'Marteki'
-    ],
-    'FPO - Dynamic Disclosures': [
+    'Design working session': [
       'Amy',
-      'Bill',
-      'Chuck',
-      'Marteki',
-      'Natalie',
-    ],
-    'FPO - Mosaic(?)': [
-      'Ans',
-      'Candice',
-      'Natalie',
-      'Nicholas'
+      'Bryce',
+      'Jess',
+      'Lorelei',
+      'Nicholas',
+      'Stephanie'
     ]
 }
     today = new Date();
