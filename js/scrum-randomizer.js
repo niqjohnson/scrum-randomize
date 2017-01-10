@@ -2,7 +2,6 @@ var teams = {
     'Design working session': [
       'Amy',
       'Bryce',
-      'Jess',
       'Lorelei',
       'Nicholas',
       'Stephanie'
