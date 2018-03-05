@@ -1,10 +1,12 @@
 var teams = {
-    'Design working session': [
-      'Amy',
-      'Bryce',
-      'Lorelei',
+    'Regulations 3000': [
+      'AJ',
+      'Bill',
+      'Chris',
+      'Craig',
+      'Jennifer',
       'Nicholas',
-      'Stephanie'
+      'Will'
     ]
 }
     today = new Date();
