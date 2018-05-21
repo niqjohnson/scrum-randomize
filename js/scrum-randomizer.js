@@ -1,18 +1,24 @@
 var teams = {
-    'Regulations 3000': [
+  'Regulations 3000': {
+    'first': [],
+    'randomized': [
       'AJ',
       'Bill',
       'Chris',
       'Craig',
       'Nicholas',
       'Will'
+    ],
+    'last': [
+      'Jeff'
     ]
-}
-    today = new Date();
+  }
+};
+today = new Date();
 
 function getNextName( team ) {
   var n = today.getDate() + today.getMonth() + today.getFullYear(),
-      i = n % ( team.length ),
+      i = n % ( Object.keys(team).length ),
       name = team[i];
   $( '#team-order' ).append( '<li>' + name + '</li>' );
   team.splice( i, 1 );
@@ -20,16 +26,29 @@ function getNextName( team ) {
 
 function orderTeam( team ) {
   var n = today.getDate() + today.getMonth() + today.getFullYear(),
-      l = team.length,
+      firstLength = team.first.length,
+      randomizedLength = team.randomized.length,
+      lastLength = team.last.length,
       content = '';
 
-  for ( var x = 0; x < l; x++ ) {
-    var i = n % ( team.length ),
-        name = team[i];
+  for ( var x = 0; x < firstLength; x++ ) {
+    var name = team.first[x];
+    content += '<li>' + name + '</li>';
+  }
+
+  for ( var y = 0; y < randomizedLength; y++ ) {
+    var i = n % ( team.randomized.length ),
+        name = team.randomized[i];
 
     content += '<li>' + name + '</li>';
-    team.splice( i, 1 );
+    team.randomized.splice( i, 1 );
   }
+
+  for ( var z = 0; z < lastLength; z++ ) {
+    var name = team.last[z];
+    content += '<li>' + name + '</li>';
+  }
+
   return content;
 }
 
@@ -39,7 +58,7 @@ $( document ).ready( function() {
 
   for ( var key in teams ) {
     var name = key,
-        team = teams[key];
+        team = teams[key],
         content = orderTeam( team );
     $( 'body' ).append( '<h2>' + name + '</h2>');
     $( 'body' ).append( '<ol>' + content + '</ol>');
