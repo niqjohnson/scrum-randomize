@@ -2,15 +2,15 @@ var teams = {
   'Regulations 3000': {
     'first': [],
     'randomized': [
-      'AJ',
-      'Bill',
-      'Chris',
+      'Cat',
+      'Chuck',
+      'Kimberley',
       'Nicholas',
+      'Scott',
+      'Sophie',
       'Will'
     ],
-    'last': [
-      'Jeff'
-    ]
+    'last': []
   }
 };
 today = new Date();
