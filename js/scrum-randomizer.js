@@ -1,5 +1,5 @@
 var teams = {
-  'Regulations 3000': {
+  'Maintenance & Response': {
     'first': [],
     'randomized': [
       'Cat',
