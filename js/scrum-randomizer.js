@@ -1,5 +1,5 @@
 var teams = {
-  'Maintenance & Response': {
+  'Maintenance &amp; Response': {
     'first': [],
     'randomized': [
       'Cat',
