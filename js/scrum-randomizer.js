@@ -2,12 +2,13 @@ var teams = {
   'Maintenance &amp; Response': {
     'first': [],
     'randomized': [
-      'Cat',
+      'Ans',
+      'Betsy',
+      'Chris',
       'Chuck',
       'Harry',
       'Nicholas',
       'Rachael',
-      'Scott',
       'Sophie',
       'Will'
     ],
