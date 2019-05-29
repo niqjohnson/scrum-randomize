@@ -4,11 +4,10 @@ var teams = {
     'randomized': [
       'Ans',
       'Betsy',
-      'Chris',
-      'Chuck',
       'Harry',
       'Nicholas',
       'Rachael',
+      'Scott',
       'Sophie',
       'Will'
     ],
