@@ -6,10 +6,9 @@ var teams = {
       'Betsy',
       'Harry',
       'Nicholas',
-      'Rachael',
       'Scott',
-      'Sophie',
-      'Will'
+      'Tina',
+      'Jess/Will'
     ],
     'last': []
   }
