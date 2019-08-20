@@ -4,6 +4,7 @@ var teams = {
     'randomized': [
       'Ans',
       'Betsy',
+      'Craig',
       'Harry',
       'Nicholas',
       'Scott',
