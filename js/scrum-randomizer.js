@@ -3,6 +3,7 @@ var teams = {
     'first': [],
     'randomized': [
       'Bill',
+      'Brandon',
       'Justin',
       'Nicholas',
       'Will',
