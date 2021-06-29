@@ -2,8 +2,6 @@ var teams = {
   'Dev Services': {
     'first': [],
     'randomized': [
-      'Bill',
-      'Brandon',
       'Justin',
       'Nicholas',
       'Will',
